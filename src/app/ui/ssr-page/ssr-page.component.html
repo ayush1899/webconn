@@ -1,0 +1,24 @@
+<h1>What's Around You</h1>
+
+
+<h2>Universal Blogs</h2>
+
+<p>This is some popular wildlife blogs from Cloud Storage...</p>
+
+<div *ngFor="let animal of animals" class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-128x128">
+        <img [src]="animal.imgURL" alt="{{ animal.bio }}">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>{{ animal.name }}</strong>
+          <br> {{ animal.bio }}
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
